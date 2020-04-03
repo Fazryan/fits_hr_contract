@@ -1,0 +1,21 @@
+<openerp>
+    <data>
+        
+        
+        <record id="view_hr_form_inherit_fields" model="ir.ui.view">
+            <field name="name">hr.contract.form.inherit.fields</field>
+            <field name="model">hr.contract</field>
+            <field name="inherit_id" ref="hr_contract.hr_contract_view_form"/>
+            <field name="arch" type="xml">
+                <field name="wage" position="after">
+                <field name="overtime_included"/>
+                <field name="transportation_allowance"/>
+                <field name="kelas_bpjs"/>
+			</field>
+            </field>
+        </record>
+        
+        
+        
+    </data>
+</openerp>
